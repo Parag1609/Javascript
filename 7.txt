@@ -1,0 +1,13 @@
+good strategy --->
+
+---IIFE WITH "USE STRICT"
+
+(function(){
+    "use strict";
+    var mps=document.querySelectorAll('p')
+    for(var i=0;i<mps.length;i++){
+        mps[i].style.color="red";
+    }
+}());
+
+---use const and let instead of var

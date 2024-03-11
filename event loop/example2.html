@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function makeuppercase(message){
+            var upper=message.toUpperCase();
+            return upper;
+        }
+        function makelowercase(message){
+            var lower=message.toLowerCase();
+            return lower;
+        }
+        function outputmessage(message){
+            var output=`Uppercase version:${makeuppercase(message)}\n`;
+            output+=`Lowercase version:${makelowercase(message)}`;
+            console.log(output);
+        }
+        outputmessage("my NAME is parag");
+    </script>
+</body>
+</html>

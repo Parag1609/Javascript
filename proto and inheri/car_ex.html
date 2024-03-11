@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>CAR EXAMPLE</h1>
+   <script>
+    const carmanufacturer={
+        name:'honda',
+        model:'accord',
+        trimlevel:'ex',
+        basefeatures:["wheels","engine","seats"],
+        entertainment:"crappy audio system"
+    }
+    const dealership=Object.create(carmanufacturer);
+    dealership.equipment="roof reck";
+    dealership.warranty="extended";
+    dealership.branding="license plate frame";
+
+    const mycar=Object.create(dealership);
+    mycar.custom="after market trailer hitch";
+    mycar.bumpersticker="save the llamas!";
+    mycar.entertainment="fancy audio system";
+
+    console.log(mycar.model);
+    console.log(mycar.branding);
+    console.log(mycar.entertainment);
+    //for in loop ... specifically for iterating objects
+
+   /*  for(const key in mycar){
+        const val=mycar[key];
+        console.log(`key is ${key} and value is ${val}`);
+    } */
+    //hasOwnProperty() ... object method
+    for(const key in mycar){
+        if(mycar.hasOwnProperty(key)){
+            const val=mycar[key];
+            console.log(`key is ${key} and value is ${val}`);
+    }
+}
+   </script> 
+</body>
+</html>

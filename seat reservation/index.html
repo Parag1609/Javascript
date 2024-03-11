@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Seat Reservations</title>
+	<link href="styles.css" rel="stylesheet">
+	<script src="myscript.js" defer></script>
+</head>
+
+<body>
+	<h1>Reserve Your Seats</h1>
+
+	<div id="stage">Stage</div>
+
+	<div id="seating">
+		<section id="left">
+			<!-- Use JavaScript to replace these -->
+			
+		</section>
+
+		<section id="middle">
+			<!-- Use JavaScript to replace these -->
+			
+		</section>
+
+		<section id="right">
+			<!-- Use JavaScript to replace these -->
+			
+		</section>
+	</div>
+
+	<a href="#" id="reserve">Reserve Seats</a>
+
+	<section id="resform">
+		<h2>Complete this form to confirm your reservation</h2>
+
+		<p id="selectedseats">You have selected x seats</p>
+
+		<form id="confirmres">
+			<label for="fname">First Name</label>
+			<input type="text" name="fname" id="fname" placeholder="Parag" required>
+
+			<label for="lname">Last Name</label>
+			<input type="text" name="lname" id="lname" placeholder="Jain" required>
+
+			<input type="submit" name="send" id="confirmbtn" value="Confirm Reservation">
+
+			<p>Or <a href="#" id="cancel">Cancel</a> and choose different seats</p>
+
+
+		</form>
+	</section>
+
+<!-- 	<script>
+
+		var left=document.getElementById('left');
+		var middle=document.getElementById('middle');
+		var right=document.getElementById('right');
+		
+		
+		
+		
+			/* var label=document.createElement('div');
+			label.setAttribute('class','label'); */
+			for(var i=16;i<301;i++){
+				var j=i;
+				for(var k=j;k<j+3;k++){
+				var leftchild=document.createElement('div');
+				leftchild.setAttribute('id',`${i}`);
+				leftchild.innerText=`${i}`;
+				left.appendChild(leftchild);
+				left=document.getElementById('left');
+					i++;
+				}
+				j=i;
+				for(var k=j;k<j+9;k++){
+				var middlechild=document.createElement('div');
+				middlechild.setAttribute('id',`${i}`);
+				middlechild.innerText=`${i}`;
+				middle.appendChild(middlechild);
+				middle=document.getElementById('middle');
+					i++;
+				}
+				j=i;
+				for(var k=j;k<j+3;k++){
+				var rightchild=document.createElement('div');
+				rightchild.setAttribute('id',`${i}`);
+				rightchild.innerText=`${i}`;
+				rightchild.appendChild(middlechild);
+				right=document.getElementById('right');
+					i++;
+				}
+			}
+	
+	</script> -->
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>Javascript events</h1>
+    <button>don't press me!</button>
+
+    <script>
+        var btn=document.querySelector('button');
+
+        function ouch(){
+            alert("i told you not to press me");
+        }
+        /* btn.onclick=ouch; */
+        btn.addEventListener('click',ouch);
+    </script>
+</body>
+</html>

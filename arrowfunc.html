@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functon</title>
+</head>
+
+<body>
+    <h1>ARROW FUNCTIONS</h1>
+
+    <script>
+       
+
+     /*    const uppercase =function(astring){
+            return astring.toUpperCase();
+        }
+
+        const uppercase =astring=>{
+            return astring.toUpperCase();
+        } */
+
+        //if function contains only return statement ,you can remove the curly braces
+
+        const uppercse = astring => astring.toUpperCase();
+        console.log(uppercse("here is a string"));
+
+        //constructor function example
+        const employee=function(fname,lname,jobtitle){
+            this.fname=fname;
+            this.lname=lname;
+            this.position=jobtitle;
+            this.fullname= () => `${fname}${lname}`;
+        }
+
+        const id1234= new employee('Bob','Smith','Mechanic');
+
+        console.log(id1234.fname);
+        console.log(id1234.fullname());
+    </script>
+</body>
+
+</html>

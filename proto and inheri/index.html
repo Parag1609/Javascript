@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Demonstrating Prototypes &amp; Inheritance</h1>
+
+    <script>
+        function iphone(){}
+
+        iphone.prototype.faceid= function(){
+            console.log("unlock my phone with my face");
+        }
+
+        iphone.prototype.video= function(){
+            console.log("take 4k video with my iphone");
+        }
+        iphone.prototype.stocksapp=function(){
+            console.log("find out what the stock market is doing");
+        }
+        let myphone=new iphone();
+        myphone.faceid();
+        myphone.stocksapp();
+        myphone.video();
+        myphone.app='instagam';
+        console.log(myphone);
+    </script>
+</body>
+</html>
